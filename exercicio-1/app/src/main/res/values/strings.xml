@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Exercicio 1</string>
+    <string name="et_nome_hint">Nome</string>
+    <string name="et_email_hint">E-mail</string>
+    <string name="et_telefone_hint">Telefone</string>
+    <string name="et_data_de_nascimento_hint">Data de nascimento</string>
+    <string name="rb_masculino_text">Masculino</string>
+    <string name="rb_feminino_text">Feminino</string>
+    <string name="tv_genero_text">Gênero</string>
+    <string name="tv_interesses_text">Interesses</string>
+    <string name="cb_musica_text">Música</string>
+    <string name="cb_filme_text">Filme</string>
+    <string name="bt_enviar_text">Enviar</string>
+    <string name="bt_cadastrar_text">Cadastrar</string>
+</resources>
