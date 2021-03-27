@@ -188,13 +188,14 @@ public class Tela1Activity extends AppCompatActivity implements Validator.Valida
 
         StringBuilder toast = new StringBuilder("Usuário cadastrado com sucesso!\n" +
                 "\nNome: " + usuario.getNome() +
-                "\nE-mail: " + usuario.getEmail() +
+                "\nE-mail: " + usuario.getEmail().toLowerCase() +
                 "\nTelefone: " + usuario.getTelefone() +
                 "\nData de nascimento: " + dataDeNascimentoFormatada +
-                "\nGênero: " + usuario.getGenero());
+                "\nGênero: " + usuario.getGenero().toLowerCase());
 
-        int quantidadeDeInteresses = usuario.getInteresses()
-                .size();
+        ArrayList<String> interesses = usuario.getInteresses();
+
+        int quantidadeDeInteresses = interesses.size();
 
         if (quantidadeDeInteresses > 0) {
             toast.append("\nInteresses: ");
@@ -204,8 +205,7 @@ public class Tela1Activity extends AppCompatActivity implements Validator.Valida
                     toast.append(" e ");
                 }
 
-                toast.append(usuario.getInteresses()
-                        .get(i)
+                toast.append(interesses.get(i)
                         .toLowerCase());
             }
         }
